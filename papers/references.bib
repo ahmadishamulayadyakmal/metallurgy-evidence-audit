@@ -1,0 +1,586 @@
+% =====================================================================
+% references.bib -- complete curated BibTeX library for the computational
+% metallurgy portfolio (e12-release-paper-portfolio). All text is English.
+%
+% Three reference ID families; the note field of every entry starts with
+% its ID and records which case (C01--C12) uses it and what it validates:
+%   R01--R31    methods and foundations      (GRAND_PLAN.md section 6)
+%   Y2R01--Y2R16 industrial case papers     (YEAR2_PLAN.md section 8)
+%   D01--D08    open datasets and software  (JOURNALS.md section 5)
+%
+% Case cards C01--C12 are in CASES.md section 4; the reference policy is
+% in CASES.md section 8.
+%
+% For manual download instructions, open-access status and the checklist of
+% which PDFs to obtain, see JOURNALS.md. Do not cite a paper you have not
+% been able to obtain.
+%
+% DOIs are reproduced exactly as written in the source documents. Entries
+% without a DOI omit the doi field, and url fields use only URLs actually
+% given in the sources. No DOIs or URLs are invented here.
+% =====================================================================
+
+% --- R01-R08: ICME & materials informatics foundations ---
+
+@article{olson1997computational,
+  author  = {Olson, G. B.},
+  title   = {Computational Design of Hierarchically Structured Materials},
+  journal = {Science},
+  volume  = {277},
+  number  = {5330},
+  pages   = {1237--1242},
+  year    = {1997},
+  doi     = {10.1126/science.277.5330.1237},
+  note    = {R01: ICME P--S--P--P framework for C11 and C12; backbone of the portfolio narrative tying all cases together}
+}
+
+@article{jain2013materialsproject,
+  author  = {Jain, A. and Ong, S. P. and Hautier, G. and others},
+  title   = {The Materials Project: A materials genome approach...},
+  journal = {APL Materials},
+  volume  = {1},
+  number  = {1},
+  pages   = {011002},
+  year    = {2013},
+  doi     = {10.1063/1.4812323},
+  note    = {R02: DFT data provenance and mandatory Materials Project citation for C04; validates the CC BY 4.0 source of composition screening data}
+}
+
+@article{agrawal2016perspective,
+  author  = {Agrawal, A. and Choudhary, A.},
+  title   = {Perspective: Materials informatics and big data: Realization of the ``fourth paradigm''...},
+  journal = {APL Materials},
+  volume  = {4},
+  pages   = {053208},
+  year    = {2016},
+  doi     = {10.1063/1.4946894},
+  note    = {R03: data-driven fourth-paradigm justification for the end-to-end ICME chain in C11}
+}
+
+@article{ramprasad2017machine,
+  author  = {Ramprasad, R. and Batra, R. and Pilania, G. and Mannodi-Kanakkithodi, A. and Kim, C.},
+  title   = {Machine learning in materials informatics: recent applications and prospects},
+  journal = {npj Computational Materials},
+  volume  = {3},
+  pages   = {54},
+  year    = {2017},
+  doi     = {10.1038/s41524-017-0056-5},
+  note    = {R04: descriptor and fingerprint methodology plus uncertainty quantification for the C04 screening pipeline}
+}
+
+@article{butler2018machine,
+  author  = {Butler, K. T. and Davies, D. W. and Cartwright, H. and Isayev, O. and Walsh, A.},
+  title   = {Machine learning for molecular and materials science},
+  journal = {Nature},
+  volume  = {559},
+  number  = {7715},
+  pages   = {547--555},
+  year    = {2018},
+  doi     = {10.1038/s41586-018-0337-2},
+  note    = {R05: data-to-representation-to-model pipeline for C04 and the ML reporting checklist used in the C12 audit}
+}
+
+@article{ong2013pymatgen,
+  author  = {Ong, S. P. and Richards, W. D. and Jain, A. and others},
+  title   = {Python Materials Genomics (pymatgen)},
+  journal = {Computational Materials Science},
+  volume  = {68},
+  pages   = {314--319},
+  year    = {2013},
+  note    = {R06: structure and composition analysis library for C04; validates the pymatgen-based featurization step}
+}
+
+@article{ward2018matminer,
+  author  = {Ward, L. and Dunn, A. and Faghaninia, A. and others},
+  title   = {Matminer: An open source toolkit for materials data mining},
+  journal = {Computational Materials Science},
+  volume  = {152},
+  pages   = {60--69},
+  year    = {2018},
+  doi     = {10.1016/j.commatsci.2018.05.018},
+  note    = {R07: featurization API and version pinning for C01, C02 and C04; validates the 47 featurization classes}
+}
+
+@article{dunn2020matbench,
+  author  = {Dunn, A. and Wang, Q. and Ganose, A. and Dopp, D. and Jain, A.},
+  title   = {Benchmarking materials property prediction methods: the MatBench test set and Automatminer reference algorithm},
+  journal = {npj Computational Materials},
+  volume  = {6},
+  pages   = {138},
+  year    = {2020},
+  doi     = {10.1038/s41524-020-00406-3},
+  note    = {R08: official splits and the honest Automatminer comparator for C01 and C04; validates the 13 benchmark tasks}
+}
+
+% --- R09-R12: ML for mechanical properties of steel ---
+
+@article{xiong2020machine,
+  author  = {Xiong, J. and Zhang, T.-Y. and Shi, S.-Q.},
+  title   = {Machine Learning of Mechanical Properties of Steels},
+  journal = {Science China Technological Sciences},
+  year    = {2020},
+  doi     = {10.1007/s11431-020-1599-5},
+  note    = {R09: steel feature families and leakage risk from processing parameters for C02 and C05; 360 NIMS samples, also arXiv:2003.01943}
+}
+
+@article{choi2019datadriven,
+  author  = {Choi, D.-K.},
+  title   = {Data-Driven Materials Modeling with XGBoost Algorithm and Statistical Inference Analysis for Prediction of Fatigue Strength of Steels},
+  journal = {International Journal of Precision Engineering and Manufacturing},
+  volume  = {20},
+  number  = {1},
+  year    = {2019},
+  doi     = {10.1007/s12541-019-00048-6},
+  note    = {R10: XGBoost fatigue-strength comparator for C05 on NIMS MatNavi; validates the statistical-inference baseline}
+}
+
+@phdthesis{xiong2021thesis,
+  author  = {Xiong, J.},
+  title   = {Materials informatics and its application to metallic materials design and discovery},
+  school  = {The Hong Kong Polytechnic University},
+  year    = {2021},
+  note    = {R11: consolidated source of steel, metallic glass and CCA datasets plus SHAP for C01 and C05; validates dataset provenance}
+}
+
+@article{chen2025interpretable,
+  author  = {Chen, J. and Wang, J. and He, Y. and others},
+  title   = {Investigation on the interpretable machine-learning model for predicting mechanical properties of DH auto-steel plates},
+  journal = {Materials Today Communications},
+  year    = {2025},
+  doi     = {10.1016/j.mtcomm.2025.112674},
+  note    = {R12: thermodynamic features and interpretability for C05; validates the SHAP-versus-metallurgy check}
+}
+
+% --- R13-R15: Computational thermodynamics & CALPHAD ---
+
+@article{otis2017pycalphad,
+  author  = {Otis, R. and Liu, Z.-K.},
+  title   = {pycalphad: CALPHAD-based Computational Thermodynamics in Python},
+  journal = {Journal of Open Research Software},
+  volume  = {5},
+  number  = {1},
+  pages   = {1},
+  year    = {2017},
+  doi     = {10.5334/jors.140},
+  note    = {R13: equilibrium solver and TDB reader for C05; validates the pycalphad thermodynamic features}
+}
+
+@article{sundman1985calphad,
+  author  = {Sundman, B. and Jansson, B. and Andersson, J.-O.},
+  title   = {The Thermo-Calc databank system},
+  journal = {CALPHAD},
+  volume  = {9},
+  pages   = {153},
+  year    = {1985},
+  note    = {R14: roots of the CALPHAD method and Gibbs models for C05; combined reference with Kaufman \& Ansara (1973)}
+}
+
+@book{saunders1998calphad,
+  author    = {Saunders, N. and Miodownik, A. P.},
+  title     = {CALPHAD: A Comprehensive Guide},
+  publisher = {Pergamon},
+  year      = {1998},
+  note      = {R15: sublattice and compound-energy-formalism models supporting the C05 CALPHAD feature set}
+}
+
+% --- R16-R21: Solidification, CFD & macrosegregation ---
+
+@article{voller1987fixedgrid,
+  author  = {Voller, V. R. and Prakash, C.},
+  title   = {A fixed grid numerical modelling methodology for convection-diffusion mushy region phase-change problems},
+  journal = {International Journal of Heat and Mass Transfer},
+  volume  = {30},
+  number  = {8},
+  pages   = {1709--1719},
+  year    = {1987},
+  doi     = {10.1016/0017-9310(87)90317-6},
+  note    = {R16: enthalpy-porosity benchmark for C03 and C07; main reproducible numerical benchmark with Darcy source}
+}
+
+@article{bennon1987continuum,
+  author  = {Bennon, W. D. and Incropera, F. P.},
+  title   = {A continuum model for momentum, heat and species transport in binary solid-liquid phase change systems --- I. Model formulation},
+  journal = {International Journal of Heat and Mass Transfer},
+  volume  = {30},
+  pages   = {2161--2170},
+  year    = {1987},
+  doi     = {10.1016/0017-9310(87)90094-9},
+  note    = {R17: binary continuum model for C03 and C07; validates coupled momentum, heat and species transport}
+}
+
+@article{ni1991volumeaveraged,
+  author  = {Ni, J. and Beckermann, C.},
+  title   = {A volume-averaged two-phase model for transport phenomena during solidification},
+  journal = {Metallurgical and Materials Transactions A},
+  year    = {1991},
+  note    = {R18: two-phase model and double-diffusive convection for C07 macrosegregation; combined reference with Beckermann \& Viskanta (1988)}
+}
+
+@article{voller1991sourcebased,
+  author  = {Voller, V. R. and Swaminathan, C. R.},
+  title   = {General source-based method for solidification phase change},
+  journal = {Numerical Heat Transfer B},
+  year    = {1991},
+  note    = {R19: source-term linearization for iteration stability of the C03 Fortran solver}
+}
+
+@book{patankar1980numerical,
+  author    = {Patankar, S. V.},
+  title     = {Numerical Heat Transfer and Fluid Flow},
+  publisher = {Hemisphere},
+  year      = {1980},
+  note      = {R20: FVM and SIMPLE discretization for C03 and C07; essential numerical-methods reference}
+}
+
+@article{rappaz1989modelling,
+  author  = {Rappaz, M.},
+  title   = {Modelling of microstructure formation in solidification processes},
+  journal = {International Materials Reviews},
+  volume  = {34},
+  number  = {1},
+  pages   = {93},
+  year    = {1989},
+  note    = {R21: macro-to-microstructure bridge for C07 and C08; validates the coupling from thermal history to grain morphology}
+}
+
+% --- R22-R26: Microstructure & phase field ---
+
+@article{dewitt2020prismspf,
+  author  = {DeWitt, S. and Rudraraju, S. and Montiel, D. and Andrews, W. B. and Thornton, K.},
+  title   = {PRISMS-PF: A general framework for phase-field modeling with a matrix-free finite element method},
+  journal = {npj Computational Materials},
+  volume  = {6},
+  pages   = {29},
+  year    = {2020},
+  doi     = {10.1038/s41524-020-0298-5},
+  note    = {R22: open-source PRISMS-PF framework and cross-code comparator for C08; covers solidification, grain growth, precipitation and corrosion}
+}
+
+@article{boettinger2002phasefield,
+  author  = {Boettinger, W. J. and Warren, J. A. and Beckermann, C. and Karma, A.},
+  title   = {Phase-field simulation of solidification},
+  journal = {Annual Review of Materials Research},
+  volume  = {32},
+  year    = {2002},
+  note    = {R23: review of phase-field models for C08; validates the Allen--Cahn and Cahn--Hilliard formulation}
+}
+
+@article{burke1952graingrowth,
+  author  = {Burke, J. E. and Turnbull, D.},
+  title   = {Grain growth law},
+  year    = {1952},
+  note    = {R24: analytical grain-growth law for C08 verification; combined classic reference with Hillert (1965)}
+}
+
+@article{hall1951petch1953,
+  author  = {Hall, E. O.},
+  title   = {Hall--Petch grain-size strengthening relation},
+  year    = {1951},
+  note    = {R25: Hall--Petch monotonicity constraint on the C05 and C11 ML predictions; combined reference with Petch (1953)}
+}
+
+@article{avrami1939jmak,
+  author  = {Avrami, M.},
+  title   = {JMAK kinetics and martensite fraction},
+  year    = {1939},
+  note    = {R26: JMAK and Koistinen--Marburger martensite-fraction kinetics for C10; combined reference with Koistinen \& Marburger (1959)}
+}
+
+% --- R27-R31: Additive manufacturing & experimental validation ---
+
+@article{khairallah2016laser,
+  author  = {Khairallah, S. A. and Anderson, A. T. and Rubenchik, A. and King, W. E.},
+  title   = {Laser powder-bed fusion additive manufacturing: Physics of complex melt flow and formation mechanisms of pores, spatter, and denudation zones},
+  journal = {Acta Materialia},
+  volume  = {108},
+  pages   = {36--45},
+  year    = {2016},
+  note    = {R27: melt-pool physics reference for C09; validates pore, spatter and denudation mechanisms}
+}
+
+@article{king2015keyhole,
+  author  = {King, W. E. and others},
+  title   = {Observation of keyhole-mode laser melting in LPBF},
+  journal = {Journal of Materials Processing Technology},
+  year    = {2015},
+  note    = {R28: conduction-to-keyhole transition for C09; validates the melt-pool regime classification}
+}
+
+@article{rosenthal1946weldpool,
+  author  = {Rosenthal, D.},
+  title   = {Analytical weld-pool solution},
+  year    = {1946},
+  note    = {R29: analytical weld-pool solution used for verification of the C09 solver; combined reference with Eagar \& Tsai (1983)}
+}
+
+@misc{nistambench,
+  author       = {{NIST}},
+  title        = {AM-Bench: Additive Manufacturing Benchmark Measurements and Challenges},
+  year         = {2022},
+  url          = {nist.gov/ambench},
+  howpublished = {NIST AM-Bench programme, 2018, 2022 and 2025 editions},
+  note         = {R30: uncertainty-annotated ground truth and blind challenge for C09; validates the AM-Bench measurement IDs}
+}
+
+@book{oberkampf2010verification,
+  author    = {Oberkampf, William L. and Roy, Christopher J.},
+  title     = {Verification and Validation in Scientific Computing},
+  publisher = {Cambridge University Press},
+  year      = {2010},
+  note      = {R31: V\&V reporting standard for C01, C03, C07, C11 and C12; MMS/GCI terminology, used with ASME V\&V 20 (2009)}
+}
+
+% --- Y2R01-Y2R16: Year 2 industrial case papers ---
+
+% Y2R01-Y2R03: steelmaking soft sensors (C05)
+@article{wang2022bof,
+  author  = {Wang, R. and others},
+  title   = {Hybrid Method for Endpoint Prediction in a Basic Oxygen Furnace},
+  journal = {Metals},
+  volume  = {12},
+  number  = {5},
+  pages   = {801},
+  year    = {2022},
+  doi     = {10.3390/met12050801},
+  note    = {Y2R01: BOF endpoint case C05; B-level external plant numbers (3.7\% / 9.77\% / 91\% quoted as literature only, never reproduced)}
+}
+
+@article{raza2025silicon,
+  author  = {Raza, O. and others},
+  title   = {Prediction of Silicon Content in a Blast Furnace via Machine Learning: A Comprehensive Processing and Modeling Pipeline},
+  journal = {Materials},
+  volume  = {18},
+  number  = {3},
+  pages   = {632},
+  year    = {2025},
+  doi     = {10.3390/ma18030632},
+  note    = {Y2R02: blast-furnace hot-metal silicon case C05; B-level external plant numbers and leakage-safe time-split method}
+}
+
+@article{son2021slagfoaming,
+  author  = {Son, K. and others},
+  title   = {Slag foaming estimation in the electric arc furnace using LSTM networks},
+  journal = {Journal of Materials Research and Technology},
+  volume  = {12},
+  pages   = {555--568},
+  year    = {2021},
+  doi     = {10.1016/j.jmrt.2021.02.085},
+  note    = {Y2R03: EAF slag-foaming case C05; B-level external plant numbers and the LSTM plus sensitivity-pruning method}
+}
+
+% Y2R04-Y2R06, Y2R16: casting, inclusions and segregation (C07)
+@article{liu2016inclusioncluster,
+  author  = {Liu, Z. and Li, B.},
+  title   = {Transient motion of inclusion cluster in vertical-bending continuous casting caster},
+  journal = {Powder Technology},
+  volume  = {287},
+  pages   = {315--329},
+  year    = {2016},
+  doi     = {10.1016/j.powtec.2015.10.025},
+  note    = {Y2R04: inclusion-cluster motion for C07; validates the Lagrangian particle-tracking capture criterion}
+}
+
+@article{chen2018lesinclusions,
+  author  = {Chen, W. and Ren, Y. and Zhang, L.},
+  title   = {Large Eddy Simulation on the Fluid Flow, Solidification and Entrapment of Inclusions in the Steel Along the Full Continuous Casting Slab Strand},
+  journal = {JOM},
+  volume  = {70},
+  number  = {12},
+  pages   = {2968--2979},
+  year    = {2018},
+  doi     = {10.1007/s11837-018-3118-3},
+  note    = {Y2R05: LES inclusion-entrapment model for C07; external plant comparison against centre inclusion bands}
+}
+
+@article{tu2014ingot231t,
+  author  = {Tu, W. and Shen, H. and Liu, B.},
+  title   = {Two-Phase Modeling of Macrosegregation in a 231 t Steel Ingot},
+  journal = {ISIJ International},
+  volume  = {54},
+  number  = {2},
+  pages   = {351--355},
+  year    = {2014},
+  doi     = {10.2355/isijinternational.54.351},
+  note    = {Y2R06: 231 t ingot measured profiles for C07; external, digitised positive and negative segregation comparison}
+}
+
+@article{chang2021inclusioncapture,
+  author  = {Chang, S.-M. and Thomas, B. G.},
+  title   = {Modeling of Inclusion Capture in a Steel Slab Caster with Vertical Section and Bending},
+  journal = {Metals},
+  volume  = {11},
+  number  = {4},
+  pages   = {654},
+  year    = {2021},
+  doi     = {10.3390/met11040654},
+  note    = {Y2R16: inclusion-capture model and LES entrapment benchmark for C07; external plant comparison}
+}
+
+% Y2R07-Y2R08: quench distortion and cracking (C10)
+@article{bouissa2020quenchdistortion,
+  author  = {Bouissa, Y. and others},
+  title   = {FEM modeling and experimental validation of quench-induced distortions of large size steel forgings},
+  journal = {Journal of Manufacturing Processes},
+  volume  = {58},
+  pages   = {592--605},
+  year    = {2020},
+  doi     = {10.1016/j.jmapro.2020.08.042},
+  note    = {Y2R07: quench-distortion FEM for C10; B-level external 0.5 mm plant result used only as literature}
+}
+
+@article{gong2026quenchcracking,
+  author  = {Gong, M. and others},
+  title   = {Numerical simulation on quench cracking based on Oyane damage model},
+  journal = {Engineering Failure Analysis},
+  volume  = {183},
+  pages   = {110269},
+  year    = {2026},
+  doi     = {10.1016/j.engfailanal.2025.110269},
+  note    = {Y2R08: Oyane damage criterion and V-notch crack-location benchmark for C10; validates damage-threshold sensitivity}
+}
+
+% Y2R09-Y2R10, Y2R15: additive manufacturing (C09)
+@article{abdi2025keyhole,
+  author  = {Abdi, M. and Mosbah, S. and Ayadi, M.},
+  title   = {High fidelity multi-physics modeling of laser metal interaction and keyhole dynamics in powder bed fusion},
+  journal = {Progress in Additive Manufacturing},
+  volume  = {10},
+  pages   = {1243--1260},
+  year    = {2025},
+  doi     = {10.1007/s40964-024-00702-0},
+  note    = {Y2R09: high-fidelity keyhole model deviations for C09; quoted as external literature, not reproduced}
+}
+
+@article{alfattani2026digitaltwin,
+  author  = {Alfattani, R. and Hotami, M. M.},
+  title   = {Digital twin--driven multiscale modelling for real-time defect prediction in metal additive manufacturing},
+  journal = {Scientific Reports},
+  volume  = {16},
+  pages   = {27141},
+  year    = {2026},
+  doi     = {10.1038/s41598-026-58348-7},
+  note    = {Y2R10: digital-twin classifier results for C09; quoted as external literature for the AM defect classifier}
+}
+
+@misc{ambench2022,
+  author       = {{NIST}},
+  title        = {AM-Bench Additive Manufacturing Benchmark Data},
+  year         = {2022},
+  url          = {nist.gov},
+  howpublished = {NIST AM-Bench programme},
+  note         = {Y2R15: AM-Bench ground truth and measurement IDs for C09; validates uncertainty-annotated single-track IN718 data}
+}
+
+% Y2R11, Y2R14: surface-defect computer vision (C06)
+@inproceedings{qian2020steeldefects,
+  author    = {Qian, K. and others},
+  title     = {Automated Detection of Steel Defects via Machine Learning based on Real-Time Semantic Segmentation},
+  booktitle = {ICVIP '19},
+  pages     = {42--46},
+  year      = {2020},
+  doi       = {10.1145/3376067.3376113},
+  note      = {Y2R11: real-time semantic-segmentation methodology for C06; reported Dice quoted as external literature}
+}
+
+@misc{severstal2019,
+  author       = {{Kaggle}},
+  title        = {Severstal: Steel Defect Detection},
+  year         = {2019},
+  url          = {kaggle.com/competitions/severstal-steel-defect-detection},
+  howpublished = {Kaggle competition},
+  note         = {Y2R14: competition data, rules and evaluation metric for C06; defines the four defect classes and the Dice-based scoring}
+}
+
+% Y2R12-Y2R13: fatigue and hydrogen-assisted fatigue (C01, C02, C05, C11, C12)
+@article{agrawal2014fatigue,
+  author  = {Agrawal, A. and others},
+  title   = {Exploration of data science techniques to predict fatigue strength of steel from composition and processing parameters},
+  journal = {Integrating Materials and Manufacturing Innovation},
+  volume  = {3},
+  pages   = {8},
+  year    = {2014},
+  doi     = {10.1186/2193-9772-3-8},
+  note    = {Y2R12: fatigue dataset and published R-squared used as the external, non-reproduced number in C01 and the worked audit example in C12; error-modality warning for C02 and C05}
+}
+
+@article{aduweniye2025hydrogenfatigue,
+  author  = {Aduwenye, P. and {\v S}ebek, F. and Yeddu, H. K.},
+  title   = {Application of machine learning for predicting hydrogen-assisted fatigue crack growth},
+  journal = {Computational Materials Science},
+  volume  = {260},
+  pages   = {114207},
+  year    = {2025},
+  doi     = {10.1016/j.commatsci.2025.114207},
+  url     = {github.com/tRosJan/machine-learning-hydrogen-assisted-fatigue},
+  note    = {Y2R13: industrial problem, public data and code, and external ANN/RF results for C11; validates the interpolation stress test at unseen pressures}
+}
+
+% --- D01-D08: Open datasets and software (canonical CASES.md / JOURNALS.md mapping) ---
+% D01 UCI Steel Plates Faults (C01, C02) | D02 NEU-DET (C02, C06)
+% D03 Kaggle Severstal (C06; overlaps Y2R14) | D04 MatBench v0.1 (C01, C04; overlaps R08)
+% D05 NIMS MatNavi / Agrawal (C05) | D06 NIST AM-Bench (C09; overlaps R30, Y2R15)
+% D07 hydrogen-assisted fatigue repository (C11; overlaps Y2R13)
+% D08 Materials Project (C04; overlaps R02)
+
+@misc{ucisteelplates,
+  author       = {{UCI Machine Learning Repository}},
+  title        = {Steel Plates Faults Data Set},
+  doi          = {10.24432/C5J88N},
+  url          = {archive.ics.uci.edu/dataset/198/steel+plates+faults},
+  howpublished = {Open tabular dataset, 1,941 plates, 27 features, 7 fault types; CC BY 4.0},
+  note         = {D01: UCI Steel Plates Faults for C01 and C02; validates provenance, checksums and schema-contract rules}
+}
+
+@misc{neudet,
+  author       = {{NEU-DET}},
+  title        = {NEU-DET Surface Defect Database},
+  howpublished = {Open surface-defect image dataset, 6 defect classes; licence verified before use},
+  note         = {D02: NEU-DET surface defect database for C02 and C06; validates provenance, licensing and per-class Dice evaluation}
+}
+
+@misc{severstaldataset,
+  author       = {{Kaggle}},
+  title        = {Severstal: Steel Defect Detection Dataset},
+  url          = {kaggle.com/competitions/severstal-steel-defect-detection},
+  howpublished = {Open competition images and RLE masks under competition terms},
+  note         = {D03: Kaggle Severstal images and RLE masks for C06; overlaps Y2R14; validates segmentation provenance and competition terms}
+}
+
+@misc{matbenchv01,
+  author       = {{MatBench}},
+  title        = {MatBench v0.1 Benchmark Dataset},
+  url          = {matbench.materialsproject.org},
+  howpublished = {13 supervised tasks with official folds; code at github.com/materialsproject/matbench},
+  note         = {D04: MatBench v0.1 download and version pinning for C01 and C04; overlaps R08; validates official splits, matbench\_steels and checksums}
+}
+
+@misc{nimsmatnavi,
+  author       = {{NIMS MatNavi}},
+  title        = {NIMS MatNavi Steel Fatigue Strength Data and Agrawal Supplementary Data},
+  howpublished = {Open supplementary dataset accompanying Y2R12},
+  note         = {D05: NIMS MatNavi / Agrawal et al. fatigue dataset for C05; supplementary data of Y2R12; validates the A-level evidence chain and error-modality reporting}
+}
+
+@misc{ambenchdata,
+  author       = {{NIST}},
+  title        = {NIST AM-Bench Single-Track IN718 Measurements},
+  url          = {nist.gov/ambench},
+  howpublished = {Public benchmark measurements with uncertainty annotations},
+  note         = {D06: NIST AM-Bench 2022 Challenge 3 measurement IDs for C09; overlaps R30 and Y2R15; validates uncertainty-annotated ground truth}
+}
+
+@misc{hydrogenfatiguerepo,
+  author       = {{tRosJan}},
+  title        = {machine-learning-hydrogen-assisted-fatigue: Data and Code},
+  url          = {github.com/tRosJan/machine-learning-hydrogen-assisted-fatigue},
+  howpublished = {Public data and code repository for API 5L X52, X70 and X100},
+  note         = {D07: public dataset and code repository for C11; overlaps Y2R13 data and code; validates the commit pin, licence and original data split}
+}
+
+@misc{materialsproject,
+  author       = {{Materials Project}},
+  title        = {Materials Project DFT Data and Metadata},
+  url          = {materialsproject.org},
+  howpublished = {Open DFT database, CC BY 4.0, academic use only},
+  note         = {D08: Materials Project DFT data for C04; overlaps R02; validates composition screening inputs and the mandatory Materials Project citation}
+}
