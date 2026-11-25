@@ -21,8 +21,7 @@ figures/*.png
 figures/*.svg
 docs/site/
 
-# Downloaded publisher PDFs and the private download log are NEVER committed.
-# See ../JOURNALS.md section 1 and section 7.
+# Downloaded publisher PDFs and private download logs are never committed.
 papers/pdf/
 papers/LOCAL_CATALOG.md
 
